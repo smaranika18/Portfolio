@@ -10,26 +10,6 @@ export function useInteractiveEffects(rootRef: RefObject<HTMLElement>, reduceMot
 
     const cleanups: Array<() => void> = [];
 
-    /* ── Tilt effect on tilt-cards ── */
-    root.querySelectorAll<HTMLElement>('.tilt-card').forEach((card) => {
-      const handlePointerMove = (event: PointerEvent): void => {
-        const rect = card.getBoundingClientRect();
-        const x = (event.clientX - rect.left) / rect.width - 0.5;
-        const y = (event.clientY - rect.top) / rect.height - 0.5;
-        card.style.transform = `perspective(900px) rotateX(${-y * 7}deg) rotateY(${x * 8}deg) translateY(-2px)`;
-      };
-      const handlePointerLeave = (): void => {
-        card.style.transform = '';
-      };
-
-      card.addEventListener('pointermove', handlePointerMove);
-      card.addEventListener('pointerleave', handlePointerLeave);
-      cleanups.push(() => {
-        card.removeEventListener('pointermove', handlePointerMove);
-        card.removeEventListener('pointerleave', handlePointerLeave);
-      });
-    });
-
     /* ── Cursor-following glow on all cards ── */
     root.querySelectorAll<HTMLElement>(GLOW_CARD_SELECTOR).forEach((card) => {
       const handleGlowMove = (event: PointerEvent): void => {

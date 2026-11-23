@@ -53,7 +53,10 @@ export function Contact(): JSX.Element {
           <h2>Get In Touch - <span className="gradient-text">Let's Build Together!</span></h2>
           <h3>Ready to collaborate or have a project in mind?</h3>
           <p>I'm always open to meaningful opportunities, interesting engineering problems and conversations about scalable SaaS products worth building.</p>
-          <a className="contact-email" href="mailto:smaranikapattnayak97@gmail.com"><i className="fa-regular fa-envelope" /> smaranikapattnayak97@gmail.com</a>
+          <div className="contact-links" style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '16px' }}>
+            <a className="contact-email" href="mailto:smaranikapattnayak97@gmail.com"><i className="fa-regular fa-envelope" /> smaranikapattnayak97@gmail.com</a>
+            <a className="contact-email" href="tel:+918260670977"><i className="fa-solid fa-phone" /> +91 8260670977</a>
+          </div>
         </div>
 
         <form className="contact-form glass-card reveal" onSubmit={handleSubmit}>

@@ -85,11 +85,11 @@ export function Profiles(): JSX.Element {
               <div className="profile-header-group">
                 <span className="profile-handle">@smaranika</span>
                 <h3 className="profile-name">Smaranika Pattnayak</h3>
-                <p className="profile-role">React Native Developer • Full Stack • AI Integration</p>
+                <p className="profile-role">React Native Developer • Node.js • Full Stack • AI Integration</p>
               </div>
 
               <p className="profile-tagline">
-                Architecting high-performance cross-platform mobile apps and intelligent cloud backends — translating ambitious concepts into elegant, production-grade products.
+                Sole developer on 3 production SaaS products across FinTech, Banking & HR-Tech. Building scalable cross-platform mobile apps, cloud backends, and AI features end-to-end.
               </p>
 
               <div className="profile-links">

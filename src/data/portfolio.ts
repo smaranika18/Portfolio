@@ -23,16 +23,17 @@ export const navigationItems: NavigationItem[] = [
 
 export const roles = [
   'React Native Developer',
-  'Full Stack Engineer',
   'Node.js Developer',
+  'Full Stack Engineer',
   'AI Integration Specialist',
+  'SaaS Architect',
 ];
 
 export const experiences: ExperienceItem[] = [
   {
     index: '01',
     date: 'AUG 2025 – PRESENT',
-    tag: 'SaaS / FinTech',
+    tag: 'SaaS / FinTech / Banking',
     iconClass: 'fa-solid fa-laptop-code',
     title: 'FullStack Developer',
     company: 'iTCart Pvt. Ltd',
@@ -40,28 +41,29 @@ export const experiences: ExperienceItem[] = [
     description:
       'Sole developer on 3 production SaaS products — CollectPro, FieldGo (Android), AixHub — serving 10,000+ users across banking, collections, and HR-Tech domains.',
     highlights: [
-      'Built AixHub end-to-end: AI face authentication for attendance, real-time GPS tracking, and React.js HR dashboard matching enterprise tools like Keka.',
-      'Integrated Google Maps API for live field-agent tracking; reduced operational response time by 40%.',
-      'Razorpay payment workflows with RBAC (3 user tiers) processing ₹50L+ monthly transactions with audit trails and fraud detection.',
-      'Optimized Node.js REST APIs with Redis caching — cut response latency by 20%.',
+      'Sole developer on 3 production SaaS products — CollectPro, FieldGo (Android), AixHub — serving 10,000+ users across banking, collections, and HR-Tech domains.',
+      'Built AixHub end-to-end: AI face authentication for attendance (eliminating buddy-punching), real-time GPS tracking, and a React.js HR dashboard — matching enterprise tools like Keka in functionality.',
+      'Integrated Google Maps API for live field-agent tracking; reduced operational response time by 40% through real-time route updates and status sync.',
+      'Razorpay payment workflows with RBAC (3 user tiers) processing 50L+ monthly transactions with full audit trails and fraud detection logic.',
+      'Optimized Node.js REST APIs with Redis caching and query tuning — cut response latency by 20%; built iTCart corporate site (React.js) scoring 60+ Lighthouse.',
     ],
     side: 'left',
   },
   {
     index: '02',
     date: 'JUL 2024 – JUL 2025',
-    tag: 'Software Development',
+    tag: 'Cross-Platform / SaaS',
     iconClass: 'fa-solid fa-pen-ruler',
     title: 'Software Developer',
     company: 'Tanama Software Pvt. Ltd',
     location: 'Bengaluru, India',
     description:
-      'Developed cross-platform React Native and React.js applications, optimized performance, and built reusable component libraries.',
+      'Developed cross-platform React Native and React.js applications, optimized production APIs, and built reusable enterprise component libraries.',
     highlights: [
-      'Improved app performance by 25% via code splitting, lazy loading, and bundle optimization.',
-      'Integrated Python REST APIs — reduced average API response times by 30% in production.',
-      'Built a reusable component library of 50+ UI elements (Material-UI + Storybook), cutting team dev time by 35%.',
-      'Achieved 99% uptime on critical endpoints through Postman API testing and automated regression suites.',
+      'Developed cross-platform React Native and React.js apps; improved performance by 25% via code splitting, lazy loading, and bundle optimization.',
+      'Integrated Python REST APIs with optimized data-fetching strategies — reduced average API response times by 30% in production.',
+      'Built a reusable component library of 50+ UI elements (Material-UI + Storybook), cutting team development time by 35%.',
+      'Achieved 99% uptime on critical endpoints through Postman API testing, automated regression suites, and proactive monitoring.',
     ],
     side: 'right',
   },
@@ -70,11 +72,11 @@ export const experiences: ExperienceItem[] = [
 export const projects: Project[] = [
   {
     date: '2025',
-    tag: 'AI-Powered HR Platform',
+    tag: 'AI Workforce Decision OS',
     title: 'AixWorkforce360',
     description:
-      'Full-stack HR Decision OS serving 5,000+ active users across HR, Manager, and Admin personas. Features an AI CoPilot delivering real-time HR suggestions — cutting average decision turnaround by 35%.',
-    technologies: ['React.js', 'Node.js', 'REST APIs', 'AI CoPilot'],
+      'Collaborated in a cross-functional team to build and ship a full-stack HR Decision OS platform serving 5,000+ active users across HR, Manager, and Admin personas for a US-based client. Contributed to AI CoPilot (cutting decision turnaround by 35%) and owned Cases, Approval Center & Governance Center with RBAC (24+ concurrent cases, 8+ pending approvals).',
+    technologies: ['React.js', 'Node.js', 'REST APIs', 'AI CoPilot Integration'],
     liveUrl: '#',
     githubUrl: '#',
     liveDisabled: true,
@@ -82,11 +84,11 @@ export const projects: Project[] = [
   },
   {
     date: '2025',
-    tag: 'AI Face Authentication',
+    tag: 'AI Identity & Attendance',
     title: 'AixHub',
     description:
-      'AI-powered HR identity & attendance platform with selfie-based biometric verification achieving 100% identity accuracy. React Native mobile app + React.js web portal with live GPS location tracking.',
-    technologies: ['React Native', 'Node.js', 'Python', 'Face Recognition AI', 'Firebase'],
+      'Sole developer: end-to-end ownership from UI/UX design through API development, AI integration, and production deployment — delivering enterprise-grade HR tooling. Selfie-based AI face biometric verification achieved 100% identity accuracy, eliminating proxy attendance entirely. React Native mobile app (self-service) + React.js web portal (real-time HR monitoring) with live GPS.',
+    technologies: ['React.js', 'React Native', 'Node.js', 'Python', 'Face Recognition AI', 'Firebase', 'JWT', 'GPS'],
     liveUrl: '#',
     githubUrl: '#',
     liveDisabled: true,
@@ -94,10 +96,10 @@ export const projects: Project[] = [
   },
   {
     date: '2025',
-    tag: 'Banking SaaS',
+    tag: 'Banking Collections SaaS',
     title: 'CollectPro',
     description:
-      'Admin dashboard managing 5,000+ collection agents with real-time GPS tracking, live status, and route visualization. Secure payment collection processing ₹50L+ monthly transactions with RBAC and automated reconciliation.',
+      'Admin dashboard managing 5,000+ collection agents with real-time GPS tracking, live status, and route visualization via Google Maps API. Secure payment collection workflow processing 50L+ monthly transactions — RBAC, audit trails, and automated reconciliation.',
     technologies: ['React.js', 'Node.js', 'Google Maps API', 'Razorpay', 'PostgreSQL'],
     liveUrl: '#',
     githubUrl: '#',
@@ -109,8 +111,8 @@ export const projects: Project[] = [
     tag: 'AI Development Tool',
     title: 'AI-Powered Code Assistant',
     description:
-      'RAG pipeline (LangChain) for repository-level code assistance — reduced code review time by 50%. GPT-4 API integration for automated code review, bug detection, and intelligent documentation.',
-    technologies: ['React.js', 'Node.js', 'OpenAI GPT-4', 'LangChain', 'MongoDB'],
+      'Built a RAG pipeline (LangChain) for repository-level code assistance — reduced code review time by 50%. GPT-4 API integration for automated code review, bug detection, and intelligent documentation via Prompt Engineering.',
+    technologies: ['React.js', 'Node.js', 'OpenAI GPT-4', 'LangChain', 'MongoDB', 'Tailwind CSS'],
     liveUrl: '#',
     githubUrl: '#',
     liveDisabled: true,
@@ -118,10 +120,10 @@ export const projects: Project[] = [
   },
   {
     date: '2024',
-    tag: 'Data Visualization',
+    tag: 'Real-time Analytics',
     title: 'Enterprise Analytics Dashboard',
     description:
-      'Comprehensive admin panel with role-based access, real-time analytics, and data visualization. Advanced filtering and search reducing data retrieval time by 40%.',
+      'Developed comprehensive admin panel with role-based access, real-time analytics, and data visualization. Implemented advanced filtering and search, reducing data retrieval time by 40%.',
     technologies: ['React.js', 'Python FastAPI', 'PostgreSQL', 'Redux', 'Chart.js'],
     liveUrl: '#',
     githubUrl: '#',
@@ -162,21 +164,23 @@ export const skills: Skill[] = [
   { name: 'Express.js', iconClass: 'devicon-express-original', categories: ['backend'] },
   { name: 'FastAPI', iconClass: 'devicon-fastapi-plain colored', categories: ['backend'] },
   { name: 'REST APIs', iconClass: 'fa-solid fa-plug', categories: ['backend'] },
+  { name: 'JWT & OAuth2', iconClass: 'fa-solid fa-key', categories: ['backend'] },
   // Databases
   { name: 'PostgreSQL', iconClass: 'devicon-postgresql-plain colored', categories: ['databases'] },
   { name: 'MySQL', iconClass: 'devicon-mysql-original colored', categories: ['databases'] },
   { name: 'MongoDB', iconClass: 'devicon-mongodb-plain colored', categories: ['databases'] },
-  { name: 'Firebase', iconClass: 'devicon-firebase-plain colored', categories: ['databases', 'cloud'] },
+  { name: 'Firebase Realtime DB', iconClass: 'devicon-firebase-plain colored', categories: ['databases', 'cloud'] },
   { name: 'Redis', iconClass: 'devicon-redis-plain colored', categories: ['databases'] },
   // Cloud / DevOps
-  { name: 'AWS', iconClass: 'devicon-amazonwebservices-plain-wordmark colored', categories: ['cloud'] },
+  { name: 'AWS (EC2, S3, Lambda)', iconClass: 'devicon-amazonwebservices-plain-wordmark colored', categories: ['cloud'] },
   { name: 'Docker', iconClass: 'devicon-docker-plain colored', categories: ['cloud'] },
-  { name: 'GitHub Actions', iconClass: 'devicon-githubactions-plain colored', categories: ['cloud'] },
+  { name: 'GitHub Actions (CI/CD)', iconClass: 'devicon-githubactions-plain colored', categories: ['cloud'] },
   { name: 'Vercel', iconClass: 'devicon-vercel-original', categories: ['cloud'] },
   // AI & Tools
-  { name: 'OpenAI', iconClass: 'fa-solid fa-brain', categories: ['ai'] },
+  { name: 'OpenAI (GPT-4)', iconClass: 'fa-solid fa-brain', categories: ['ai'] },
   { name: 'LangChain (RAG)', iconClass: 'fa-solid fa-link', categories: ['ai'] },
   { name: 'Face Recognition AI', iconClass: 'fa-solid fa-face-smile', categories: ['ai'] },
+  { name: 'GitHub Copilot', iconClass: 'fa-solid fa-robot', categories: ['ai', 'tools'] },
   { name: 'Prompt Engineering', iconClass: 'fa-solid fa-wand-magic-sparkles', categories: ['ai'] },
   // Payments
   { name: 'Razorpay', iconClass: 'fa-solid fa-credit-card', categories: ['payments'] },
@@ -191,7 +195,7 @@ export const skills: Skill[] = [
 
 export const certifications: Certification[] = [
   {
-    tag: 'Full Stack',
+    tag: 'Besant Technologies • 2024',
     title: 'MERN Stack Development',
     description:
       'Comprehensive training in MongoDB, Express.js, React.js, and Node.js covering end-to-end web application development.',
@@ -199,7 +203,7 @@ export const certifications: Certification[] = [
     credentialUrl: '#',
   },
   {
-    tag: 'Mobile Development',
+    tag: 'Meta / Coursera • 2024',
     title: 'React Native Specialization',
     description:
       'Professional specialization from Meta covering cross-platform mobile app development with React Native.',
@@ -216,6 +220,6 @@ export const education: Education = {
 };
 
 export const profileLinks: ProfileLink[] = [
-  { name: 'LinkedIn', action: 'Connect', href: 'https://linkedin.com/in/smaranika', iconClass: 'fa-brands fa-linkedin' },
-  { name: 'GitHub', action: 'Commit', href: 'https://github.com/smaranika', iconClass: 'fa-brands fa-github' },
+  { name: 'LinkedIn', action: 'Connect', href: 'https://www.linkedin.com/in/smaranika-pattnayak-4b13b327a/', iconClass: 'fa-brands fa-linkedin' },
+  { name: 'GitHub', action: 'Commit', href: 'https://github.com/smaranika18', iconClass: 'fa-brands fa-github' },
 ];

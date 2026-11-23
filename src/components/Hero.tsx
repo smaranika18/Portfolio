@@ -17,14 +17,14 @@ export function Hero({ reduceMotion, onOpenResume }: HeroProps): JSX.Element {
       <div className="floating-symbol symbol-four"><i className="fa-regular fa-lightbulb" /></div>
 
       <div className="hero-content">
-        <p className="eyebrow">React Native Developer — Full Stack — 2+ YOE — Bangalore</p>
+        <p className="eyebrow">React Native Developer — Node.js — Full Stack — 2+ YOE — SaaS — AI Integration — Bangalore</p>
         <h1 className="hero-title">
           <span className="gradient-text">{typingText}</span>
           <span className="typing-caret">|</span>
         </h1>
-        <p className="hero-meta">Smaranika Pattnayak <span>•</span> REACT NATIVE DEVELOPER</p>
+        <p className="hero-meta">Smaranika Pattnayak <span>•</span> REACT NATIVE & FULL STACK DEVELOPER</p>
         <div className="hero-actions">
-          <a className="button primary magnetic" href="https://linkedin.com/in/smaranika" target="_blank" rel="noreferrer">
+          <a className="button primary magnetic" href="https://www.linkedin.com/in/smaranika-pattnayak-4b13b327a/" target="_blank" rel="noopener noreferrer">
             Let's Connect <i className="fa-solid fa-arrow-up-right-from-square" />
           </a>
           <button className="button ghost magnetic" type="button" onClick={onOpenResume}>

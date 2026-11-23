@@ -32,13 +32,41 @@ export function ResumeModal({ open, onClose }: ResumeModalProps): JSX.Element {
       <div className="modal-panel">
         <div className="modal-header">
           <div><span className="tag">Resume</span><h2 id="resumeTitle">My Resume - <span className="gradient-text">On Paper!</span></h2></div>
-          <button ref={closeButtonRef} className="modal-close" type="button" aria-label="Close resume" onClick={onClose}>
-            <i className="fa-solid fa-xmark" />
-          </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <a
+              href="/assets/resume.pdf"
+              download="Smaranika_Pattnayak_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button ghost"
+              style={{ padding: '8px 16px', fontSize: '0.85rem', textDecoration: 'none' }}
+              aria-label="Download resume PDF"
+            >
+              <i className="fa-solid fa-download" style={{ marginRight: '6px' }} />
+              Download PDF
+            </a>
+            <button ref={closeButtonRef} className="modal-close" type="button" aria-label="Close resume" onClick={onClose}>
+              <i className="fa-solid fa-xmark" />
+            </button>
+          </div>
         </div>
         <div className="resume-frame">
           <iframe title="Resume preview" src="/assets/resume.pdf#toolbar=0&navpanes=0" />
-          <div className="resume-fallback"><i className="fa-regular fa-file-pdf" /><p>Add your PDF as <code>assets/resume.pdf</code>.</p></div>
+          <div className="resume-fallback">
+            <i className="fa-regular fa-file-pdf" />
+            <p>Viewing resume inline is not supported on this device/browser.</p>
+            <a
+              href="/assets/resume.pdf"
+              download="Smaranika_Pattnayak_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button primary"
+              style={{ marginTop: '8px', textDecoration: 'none' }}
+            >
+              <i className="fa-solid fa-download" style={{ marginRight: '6px' }} />
+              Download / Open Resume
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -247,7 +247,7 @@ export function About(): JSX.Element {
   return (
     <section id="about" className="content-section section-anchor">
       <div className="container">
-        <SectionHeading kicker="01 / ABOUT" prefix="About Me -" highlight="Behind The Code & Canvas!" />
+        <SectionHeading kicker="01 / ABOUT" prefix="About Me -" highlight="Behind The Code & Canvas! 🎨💻" />
 
         <p className="about-intro-line reveal">
           A glimpse into who I am, how I architect systems, and what drives my work every day.
@@ -293,25 +293,27 @@ export function About(): JSX.Element {
             <article className="about-bio-card glass-card about-card">
               <div className="about-bio-content">
                 <p>
-                  A <strong>Full Stack & React Native Developer</strong> by profession and an{' '}
-                  <strong>artist by passion</strong> — I spend my days shaping responsive pixels on screens and my free
-                  hours mixing colors on canvases. I believe building software, like painting, is the art of starting
-                  with a blank slate and crafting something enduring, intuitive, and meaningful.
+                  I'm a <strong>Full Stack / React Native Developer</strong> by profession and an{' '}
+                  <strong>artist by passion</strong> — basically, I spend my days fixing pixels on screens and my free time putting them on canvases. 😄
                 </p>
 
                 <p>
-                  With <strong>2+ years of production experience</strong>, I've served as the sole developer on{' '}
-                  <strong>3 live SaaS products</strong> (CollectPro, FieldGo, and AixHub) supporting{' '}
-                  <strong>10,000+ active users</strong> across FinTech, Banking, and HR-Tech. Whether integrating{' '}
-                  <strong>biometric face-authentication AI</strong>, engineering real-time GPS tracking, or architecting
-                  enterprise dashboards, I own features end-to-end from database schemas to production deployment on AWS.
+                  With <strong>2+ years of experience</strong>, I've built <strong>3 production SaaS products</strong> serving{' '}
+                  <strong>10,000+ users</strong> across FinTech, Banking, and HR-Tech. I work with{' '}
+                  <strong>React, React Native, Node.js, REST APIs, and AI</strong> — turning complicated ideas into things that actually work.
                 </p>
 
                 <p>
-                  I'm driven by measurable outcomes: <strong>40% lower response latency</strong>,{' '}
-                  <strong>30% faster API turnarounds</strong>, and <strong>95+ Lighthouse performance scores</strong>.
-                  Whether it's an empty canvas or a blank code editor,{' '}
-                  <strong>I thrive on turning difficult technical challenges into seamless user experiences. 🚀</strong>
+                  I've <strong>reduced latency by 40%</strong>, <strong>improved API response times by 30%</strong>, and achieved{' '}
+                  <strong>95+ Lighthouse scores</strong>. Not bad for someone who sometimes struggles to decide which colour to use on a painting!
+                </p>
+
+                <p>
+                  From building AI-powered features to fixing that one bug that mysteriously disappears when someone else checks it, I enjoy owning products end-to-end. I love clean code, creative chaos, solving problems, and occasionally arguing with bugs like they have feelings.
+                </p>
+
+                <p>
+                  <strong>Whether it's a blank canvas or a blank code editor, I love starting with nothing and creating something meaningful.</strong> 🚀
                 </p>
               </div>
 

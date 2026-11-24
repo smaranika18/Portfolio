@@ -101,6 +101,45 @@ button { color: inherit; }
               color 0.25s ease;
 }
 
+/* Fixed Brand Logo Link */
+.brand-logo-fixed {
+  position: fixed;
+  top: 22px;
+  left: 24px;
+  z-index: 1800;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  background: rgba(10, 10, 20, 0.75);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+  transition: transform 0.45s cubic-bezier(0.23, 1, 0.32, 1),
+              opacity 0.45s cubic-bezier(0.23, 1, 0.32, 1),
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.brand-logo-fixed.nav-hidden {
+  transform: translateY(-88px);
+}
+
+.brand-logo-fixed:hover {
+  transform: scale(1.08);
+  border-color: rgba(103, 232, 249, 0.85);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.45);
+}
+
+.brand-logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: block;
+}
+
 .theme-toggle-fixed.nav-hidden {
   transform: translateY(-88px);
 }
@@ -839,7 +878,7 @@ button { color: inherit; }
 /* Polished Glass Link Cards */
 .profile-links {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 14px;
   margin-top: 6px;
 }
@@ -932,6 +971,8 @@ button { color: inherit; }
 .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 44px; align-items: center; }
 .contact-copy h3 { margin: 28px 0 10px; font-size: 1.25rem; }.contact-copy > p:not(.section-kicker) { color: var(--muted); max-width: 530px; }
 .contact-email { display: inline-flex; align-items: center; gap: 10px; margin-top: 24px; color: #cebfff; font-weight: 700; }
+.contact-links .contact-email { margin-top: 0; transition: color .2s ease, transform .2s ease; }
+.contact-links .contact-email:hover { color: #ffffff; transform: translateX(3px); }
 .contact-form { padding: 28px; border-radius: var(--radius-xl); transition: border-color .35s cubic-bezier(.23,1,.32,1), box-shadow .35s cubic-bezier(.23,1,.32,1); }
 .contact-form:hover { border-color: rgba(139,92,246,.40); box-shadow: 0 0 25px rgba(139,92,246,.18), 0 0 60px rgba(139,92,246,.08), 0 24px 70px rgba(0,0,0,.35); }
 .field-row { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
@@ -1050,6 +1091,17 @@ button { color: inherit; }
   border: 1px solid rgba(139, 92, 246, 0.24);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
   color: #7c3aed;
+}
+
+[data-theme="light"] .brand-logo-fixed {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .brand-logo-fixed:hover {
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.25);
 }
 
 [data-theme="light"] .theme-toggle-fixed:hover {
@@ -1363,6 +1415,9 @@ button { color: inherit; }
 [data-theme="light"] .contact-email {
   color: #6d28d9;
 }
+[data-theme="light"] .contact-links .contact-email:hover {
+  color: #4c1d95;
+}
 
 [data-theme="light"] .contact-form {
   background: rgba(255, 255, 255, 0.9);
@@ -1481,6 +1536,8 @@ button { color: inherit; }
   .cursor-dot, .cursor-ring { display: none; }
   .reveal { transform: translateY(18px); }
   .theme-toggle-fixed { top: 14px; right: 14px; width: 40px; height: 40px; font-size: 0.95rem; }
+  .brand-logo-fixed { top: 14px; left: 14px; width: 40px; height: 40px; }
+  .brand-logo-img { width: 28px; height: 28px; }
 }
 
 @media (max-width: 520px) {

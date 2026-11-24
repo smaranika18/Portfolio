@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import resumePdf from '../Documents/Sam_Resume_v1.pdf';
 
 interface ResumeModalProps {
   open: boolean;
@@ -34,8 +35,8 @@ export function ResumeModal({ open, onClose }: ResumeModalProps): JSX.Element {
           <div><span className="tag">Resume</span><h2 id="resumeTitle">My Resume - <span className="gradient-text">On Paper!</span></h2></div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <a
-              href="/assets/resume.pdf"
-              download="Smaranika_Pattnayak_Resume.pdf"
+              href={resumePdf}
+              download="Sam_Resume_v1.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="button ghost"
@@ -51,13 +52,13 @@ export function ResumeModal({ open, onClose }: ResumeModalProps): JSX.Element {
           </div>
         </div>
         <div className="resume-frame">
-          <iframe title="Resume preview" src="/assets/resume.pdf#toolbar=0&navpanes=0" />
+          <iframe title="Resume preview" src={`${resumePdf}#toolbar=0&navpanes=0`} />
           <div className="resume-fallback">
             <i className="fa-regular fa-file-pdf" />
             <p>Viewing resume inline is not supported on this device/browser.</p>
             <a
-              href="/assets/resume.pdf"
-              download="Smaranika_Pattnayak_Resume.pdf"
+              href={resumePdf}
+              download="Sam_Resume_v1.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="button primary"

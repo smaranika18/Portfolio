@@ -97,6 +97,21 @@ export function Navbar({ theme = 'dark', onToggleTheme }: NavbarProps): JSX.Elem
         </div>
       </nav>
 
+      <a
+        href="#home"
+        className={`brand-logo-fixed tilt-card magnetic${hiddenByScroll ? ' nav-hidden' : ''}`}
+        aria-label="Smaranika Pattnayak - Back to top"
+        title="Smaranika Pattnayak"
+      >
+        <img
+          src={`${import.meta.env.BASE_URL}favicon-32x32.png`}
+          alt="Smaranika"
+          width={32}
+          height={32}
+          className="brand-logo-img"
+        />
+      </a>
+
       {onToggleTheme && (
         <button
           type="button"

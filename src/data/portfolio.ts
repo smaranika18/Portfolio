@@ -222,4 +222,5 @@ export const education: Education = {
 export const profileLinks: ProfileLink[] = [
   { name: 'LinkedIn', action: 'Connect', href: 'https://www.linkedin.com/in/smaranika-pattnayak-4b13b327a/', iconClass: 'fa-brands fa-linkedin' },
   { name: 'GitHub', action: 'Commit', href: 'https://github.com/smaranika18', iconClass: 'fa-brands fa-github' },
+  { name: 'Instagram', action: 'Follow', href: 'https://www.instagram.com/sam.and.her.20s?cnvx=MWc1Mnk4ZXg5dzRwcg%3D%3D&utm_source=qr', iconClass: 'fa-brands fa-instagram' },
 ];

@@ -247,7 +247,7 @@ export function About(): JSX.Element {
   return (
     <section id="about" className="content-section section-anchor">
       <div className="container">
-        <SectionHeading kicker="01 / ABOUT" prefix="About Me -" highlight="Behind The Code & Canvas! 🎨💻" />
+        <SectionHeading kicker="01 / ABOUT" prefix="About Me -" highlight="Behind The Code & Canvas! " />
 
         <p className="about-intro-line reveal">
           A glimpse into who I am, how I architect systems, and what drives my work every day.

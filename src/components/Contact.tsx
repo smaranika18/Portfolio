@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from 'react';
+import resumePdf from '../Documents/Sam_Resume_v1.pdf';
 import type { ContactStatus } from '../types/portfolio';
 
 function getErrorMessage(payload: unknown): string | undefined {
@@ -53,9 +54,32 @@ export function Contact(): JSX.Element {
           <h2>Get In Touch - <span className="gradient-text">Let's Build Together!</span></h2>
           <h3>Ready to collaborate or have a project in mind?</h3>
           <p>I'm always open to meaningful opportunities, interesting engineering problems and conversations about scalable SaaS products worth building.</p>
-          <div className="contact-links" style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '16px' }}>
-            <a className="contact-email" href="mailto:smaranikapattnayak97@gmail.com"><i className="fa-regular fa-envelope" /> smaranikapattnayak97@gmail.com</a>
-            <a className="contact-email" href="tel:+918260670977"><i className="fa-solid fa-phone" /> +91 8260670977</a>
+          <div className="contact-links" style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '18px' }}>
+            <a className="contact-email" href="mailto:smaranikapattnayak97@gmail.com">
+              <i className="fa-regular fa-envelope" /> smaranikapattnayak97@gmail.com
+            </a>
+            <a className="contact-email" href="tel:+918260670977">
+              <i className="fa-solid fa-phone" /> +91 8260670977
+            </a>
+            <a
+              className="contact-email"
+              href="https://www.instagram.com/sam.and.her.20s?cnvx=MWc1Mnk4ZXg5dzRwcg%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram: @sam.and.her.20s"
+            >
+              <i className="fa-brands fa-instagram" /> @sam.and.her.20s
+            </a>
+            <a
+              className="contact-email"
+              href={resumePdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Sam_Resume_v1.pdf"
+              aria-label="Download Sam's Resume PDF"
+            >
+              <i className="fa-solid fa-file-arrow-down" /> Download Resume (PDF)
+            </a>
           </div>
         </div>
 
